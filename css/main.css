@@ -1,0 +1,129 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+.np{
+	padding: 0;
+}
+.nm{
+	margin: 0;
+}
+.t-cell{
+	display: table-cell;
+}
+.d-table{
+	display: table;
+}
+
+
+body{
+	font-size:16px;
+	font-size: 100%;
+	font-family: 'Roboto', sans-serif;
+}
+.container{
+	background-color: #edf0f7;
+	padding: 30px;
+}
+
+.timeline-container{
+	border-top: 1px solid #c0cedc;
+	border-bottom: 1px solid #c0cedc;
+	margin-top:20px;
+	padding-bottom: 30px;
+}
+.timeline-heading {
+	display: block;
+}
+.timeline-heading .heading{
+	font-size: 1.6rem;
+	color: #F55B5B;
+	margin-bottom: 5px;
+}
+.timeline-heading .story{
+	font-size:3rem;
+	margin:0;
+	color:#0076d7;
+}
+
+.timeline-views ul{
+	padding: 0;
+	margin: 0;
+	margin-top: 30px;
+}
+
+.timeline-views ul li{
+	text-align: center;
+	display: block;
+	margin:.3rem;
+}
+.timeline-views ul li a{
+	width:70%;
+	padding: 1.15rem 0;
+	max-width:143px;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	display: block;
+	font-size: 1.3rem;
+	margin:auto;
+	font-weight: 800;
+	color: #fff;
+	text-transform: capitalize;
+	background-color: #A7B6C5;
+	line-height: 1.2;
+	border-radius: 3px;
+	transition: all .1s ease;
+}
+
+.view-item.active a{
+	transition: all .1s ease;
+	font-size:1.75rem;
+	background-color: #0076d7;
+	padding:1.65rem 0;
+}
+
+.box-container {
+	position: relative;
+}
+.box-container .box{
+	padding-top: 30px;
+	position: absolute;
+	opacity: 0;
+	top: 0;
+}
+.box-container .box.active{
+	display: block;
+	position: relative;
+	opacity: 1;
+}
+
+.box h1{
+	font-size:4rem;
+	padding-top: .25rem;
+	margin: 0;
+	font-weight: 800;
+	color: #0076d7;
+}
+
+.box h3{
+	text-transform: uppercase;
+	font-size:1.5rem;
+	color: #F55B5B;
+	margin: 0;
+	padding: .6em 0;
+}
+.box p{
+	font-size:2em;
+	font-weight:300;
+}
+
+.box-container .box .box-content{
+	margin-bottom: 20px;
+}
+.box-container .box .box-content::before,.box-container .box .box-content::after{
+	content: '';
+	display: table;
+	box-sizing: border-box;
+}
