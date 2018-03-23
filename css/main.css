@@ -210,11 +210,15 @@ nav ul li a.btn-donate{
 	text-transform: uppercase;
 	text-decoration: none;
 	line-height:65px;
-	margin-bottom: 15px;
+	max-width:320px;
+	margin: 0 auto 15px auto;
+
 }
 .action-center .donate{
 	background-color:#a30f05;
 	line-height: 65px;
+	max-width:320px;
+	margin: 0 auto;
 }
 .action-center .donate span{
 	display: inline-block;
@@ -228,6 +232,7 @@ nav ul li a.btn-donate{
 .action-center .donate a{
 	display: inline-block;
 	font-size: 30px;
+	max-width:200px;
 	line-height: 20px;
 	margin-left:-5px;
 	padding:0 10px;
