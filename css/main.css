@@ -149,11 +149,13 @@ nav ul li a.btn-donate{
 	position: absolute;
 	opacity: 0;
 	top: 0;
+	z-index: -1;
 }
 .box-container .box.active{
 	display: block;
 	position: relative;
 	opacity: 1;
+	z-index: 1
 }
 
 .box h1{
@@ -187,9 +189,8 @@ nav ul li a.btn-donate{
 
 
 .action-center{
-	width:350px;
-	margin: 0 auto;
-	padding:15px 30px;
+	width:100%;
+	padding:15px 0;
 	background:#f2f5f7;
 	text-align: center;
 }
@@ -253,9 +254,9 @@ nav ul li a.btn-donate{
 }
 .get-mobile-alerts {
 	position: relative;
-	width:600px;
+	width:100%;
 	background-color:#0076d7;
-	margin:50px auto;
+	margin:50px 0;
 	padding:20px 0;
 
 }
