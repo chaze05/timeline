@@ -413,6 +413,11 @@ nav ul li a.btn-donate {
 
 /* Menu Page */
 
+.item-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
 .item-container .heading {
     margin-bottom: 25px;
 }
@@ -434,6 +439,7 @@ nav ul li a.btn-donate {
 }
 
 .item-container ul {
+    list-style: none;
     padding: 0;
     margin: 0;
 }
@@ -445,7 +451,7 @@ nav ul li a.btn-donate {
 }
 
 .item-container ul li .item-box {
-    padding: 15px 75px;
+    padding: 23px 75px;
     cursor: pointer;
     position: relative;
 }
@@ -463,7 +469,7 @@ nav ul li a.btn-donate {
     background-color: #001b40;
     width: 60px;
     height: 100%;
-    padding: 17px;
+    padding: 20px 17px;
 }
 
 .item-container ul li .item-box .icon-right {
@@ -473,7 +479,7 @@ nav ul li a.btn-donate {
     background-color: transparent;
     width: 60px;
     height: 100%;
-    padding: 17px;
+    padding: 25px 17px;
 }
 
 .item-container ul li .item-box .icon-right .fa.fa-chevron-down {
@@ -664,4 +670,8 @@ nav ul li a.btn-donate {
     }
 }
 
-6
+padding: 0;
+
+}
+
+}
