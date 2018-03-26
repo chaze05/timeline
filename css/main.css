@@ -616,7 +616,8 @@ nav ul li a.btn-donate {
     margin:0 auto;
     background-color: #387ab6;
     max-width:275px;
-    margin: 25px auto;
+    margin-top: 10px;
+    margin-bottom: 25px;
 }
 .follow-box .heading{
     text-transform: uppercase;
