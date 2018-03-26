@@ -38,7 +38,8 @@ section .container {
 
 nav {
     position: relative;
-    padding: 15px 0;
+    padding-top: 15px;
+    background-color: #073664;
 }
 
 nav .bar-container {
@@ -48,7 +49,7 @@ nav .bar-container {
     width: 51px;
     height: 51px;
     cursor: pointer;
-    top: 15px;
+    bottom: 5px;
     padding: 15px 10px;
     z-index: 99;
 }
@@ -68,6 +69,8 @@ nav ul {
     margin: 0;
     text-align: center;
     list-style: none;
+    max-width: 	780px;
+    margin: 	0 auto;
 }
 
 nav ul li {
@@ -606,6 +609,52 @@ nav ul li a.btn-donate {
 }
 
 
+/* follow-box  */
+
+.follow-box{
+    padding: 20px 20px;
+    margin:0 auto;
+    background-color: #387ab6;
+    max-width:275px;
+    margin: 25px auto;
+}
+.follow-box .heading{
+    text-transform: uppercase;
+    font-size:25px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    font-weight:800;
+}
+.follow-box a{
+    color:#fff;
+    vertical-align: middle;
+    display: inline-block;
+    padding:5px 15px;
+    border-radius:5px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+.follow-box a.facebook{
+    background-color: #4267b2;
+    margin-left: 3px;
+}
+.follow-box a.twitter{
+    background-color: #1b95e0;
+    margin-left: 15px;
+}
+.follow-box a i{
+    display: inline-block;
+    vertical-align: middle;
+    font-size:16px;
+    margin-right: 5px;
+}
+.follow-box span{
+    font-size:13px;
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: capitalize;
+}
 /* Media Queries */
 
 @media only screen and (max-width:992px) {
@@ -613,9 +662,10 @@ nav ul li a.btn-donate {
         display: block;
     }
     nav ul {
-        border-top: 1px solid white;
+        /*border-top: 1px solid white;*/
         padding-top: 50px;
         max-height: 0;
+        background-color: #073664;
         overflow: hidden;
         transition: max-height .5s linear;
     }

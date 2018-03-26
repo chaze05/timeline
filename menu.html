@@ -27,6 +27,21 @@
     <header>
         <div class="container">
             <nav>
+                <div class="follow-box">
+                    <span class="heading">
+                        follow elizabeth
+                    </span>
+                    <div class="clearfix">
+                        <a href="#" class="facebook pull-left">
+                            <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                            <span>like 3.1M</span>
+                        </a>
+                        <a href="#" class="twitter pull-right">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <span>follow</span>
+                        </a>
+                    </div>
+                </div>   
                 <div class="bar-container">
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -168,6 +183,31 @@
             } else {
                 $(this).find('.item-content').css('max-height', 0);
             }
+        })
+        $('.view-item').on('click', function() {
+            var myBox = $(this).data('box')
+            $('.view-item').removeClass('active');
+            $(this).addClass('active');
+            $('.box').removeClass('active')
+            $('.' + myBox).addClass('active')
+        })
+        $('.bar-container').on('click', function() {
+            var height = $(this).next().find('li').outerHeight();
+            var count = $(this).next().find('li').length;
+            var myHeight = height * count + 50;
+            $(this).next().toggleClass('active');
+            if ($(this).next().css('max-height') == "0px") {
+                $(this).next().css('max-height', myHeight + "px");
+            } else {
+                $(this).next().css('max-height', '0');
+            }
+            $(window).on('resize', function() {
+                if ($(window).width() > 992) {
+                    $('.bar-container').next().css('max-height', '51px');
+                    console.log('1')
+                }
+            })
+
         })
     </script>
 </body>
